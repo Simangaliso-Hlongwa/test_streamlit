@@ -1,7 +1,5 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-
 # Title of the app
 st.title("Researcher Profile Page")
 
@@ -36,25 +34,25 @@ if uploaded_file:
         st.write("Showing all publications")
 
     #
-    # uploaded_file = st.file_uploader("Choose a CSV file", type=["csv"])
+    # # uploaded_file = st.file_uploader("Choose a CSV file", type=["csv"])
+    # #
+    # # if uploaded_file is not None:
+    # #
+    # #     df = pd.read_csv(uploaded_file)
+    # #
     #
-    # if uploaded_file is not None:
     #
-    #     df = pd.read_csv(uploaded_file)
+    #     x_col = st.selectbox("Select X-axis column", publications.columns)
     #
-
-
-        x_col = st.selectbox("Select X-axis column", publications.columns)
-
-        y_col = st.selectbox("Select Y-axis column", publications.columns)
-
-
-
-        fig, ax = plt.subplots()
-
-        ax.plot(publications[x_col], publications[y_col])
-
-        st.pyplot(fig)
+    #     y_col = st.selectbox("Select Y-axis column", publications.columns)
+    #
+    #
+    #
+    #     fig, ax = plt.subplots()
+    #
+    #     ax.plot(publications[x_col], publications[y_col])
+    #
+    #     st.pyplot(fig)
 
 
 
