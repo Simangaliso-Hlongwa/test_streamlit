@@ -10,9 +10,20 @@ institution = "North-West University"
 
 # Display basic profile information
 st.header("Researcher Overview")
-st.write(f"**Name:** {name}")
-st.write(f"**Field of Research:** {field}")
-st.write(f"**Institution:** {institution}")
+
+#formatting the displayed information
+col1, col2, col3, = st.column(3)
+
+with col1:
+    st.write(f"**Name:** {name}")
+    st.write(f"**Field of Research:** {field}")
+    st.write(f"**Institution:** {institution}")
+
+with col2:
+    st.write()
+
+with col3:
+    st.image("500x500.jpg")
 
 # Add a section for publications
 st.header("Publications")
