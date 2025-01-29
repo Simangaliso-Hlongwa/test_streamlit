@@ -12,7 +12,7 @@ institution = "North-West University"
 st.header("Researcher Overview")
 
 #formatting the displayed information
-col1, col2, col3, = st.column(3)
+col1, col2, col3, = st.columns(3)
 
 with col1:
     st.write(f"**Name:** {name}")
