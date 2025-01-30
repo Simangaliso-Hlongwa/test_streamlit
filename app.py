@@ -54,7 +54,7 @@ if menu == "Researcher Profile":
 
     with col2:
         st.image("500x500.jpg")
-        st.image(width=400)
+        # st.image(width=400)
     
 
 elif menu == "Publications":
