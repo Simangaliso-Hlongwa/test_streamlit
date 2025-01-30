@@ -49,11 +49,11 @@ if menu == "Researcher Profile":
         st.write(f"**Name:** {name}")
         st.write(f"**Field of Research:** {field}")
         st.write(f"**Institution:** {institution}")
-        st.title("Anout")
+        st.title("About")
         st.write(f"{bio}")
 
     with col2:
-        st.image("500x500.jpeg")
+        st.image("500x500.jpg")
     
 
 elif menu == "Publications":
