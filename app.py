@@ -49,7 +49,7 @@ if menu == "Researcher Profile":
         st.write(f"**Name:** {name}")
         st.write(f"**Field of Research:** {field}")
         st.write(f"**Institution:** {institution}")
-        st title("Anout")
+        st.title("Anout")
         st.write(f"{bio}")
 
     with col2:
